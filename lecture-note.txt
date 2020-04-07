@@ -12,3 +12,20 @@ new gen. fancy sexy language(syntax?)
 
 nodemon => refresh server(..I guess) whenever any modification made
 no need to re-start the file, just refresh the browser
+
+***********************************
+2.6 <MiddleWares>
+It's about the connection until it finish ..?
+Step1. How the connection starts => the moment we go to browser(requested)
+Step2. After connected => execute the file "index.js"
+Step2.n. MiddleWWWWWWWWWWwwWares
+Step3. Ex) app.get("/",handlePlus) => respond(final) by function handlePlus : 
+
+app.get(request=route, Middleware, respond) // route를 처리하는 과정
+Start <<<<< MiddleWares <<<<<< end
+Every kind of function on express can be MiddleWares
+Middleware func has 'next' argument
+
+Ex in use>> Confirmation of user id, IP address
+
+Conclusion>> Executing couple of functions beforeeee handling route
