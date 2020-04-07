@@ -1,0 +1,14 @@
+***********************************
+app.get("/plus", handlePlus);
+if someone tries to "get" to "/"
+After 'get' request -> should be 'respond' request
+respond can be done by HTML, console, error, ...
+otherwise, loading forever..
+
+***********************************
+babel => Compiler for JS
+new gen. fancy sexy language(syntax?)
+=> compatible one that browser understand
+
+nodemon => refresh server(..I guess) whenever any modification made
+no need to re-start the file, just refresh the browser
