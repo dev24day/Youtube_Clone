@@ -3,16 +3,12 @@ import morgan from "morgan";
 import helmet from "helmet";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-import { userRouter } from "./router";
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoRouter";
+import globalRouter from "./routers/globalRouter";
+import routes from "./routes";
 
 const app = express();
-const PORT = 4000;
-
-const handleHome = (req, res) => res.send("Respond success");
-const handlePlus = (req, res) => res.send("Success again");
-
-//middleware에서 res.send를 실행하면 연결을 끊어버림
-const middleWare = (req, res, next) => res.send("Not Happening");
 
 app.use(cookieParser()); // understand cookie from user to use session
 app.use(bodyParser.json()); //access to request obj that has form data
@@ -20,8 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.get("/", handleHome);
-app.get("/plus", handlePlus);
-app.use("/user", userRouter);
+app.use(routes.users, userRouter);
+app.use(routes.videos, videoRouter);
+app.use(routes.home, globalRouter);
 
 export default app;
