@@ -34,3 +34,15 @@ Conclusion>> Executing couple of functions beforeeee handling route
 2.7 Middleware part Two
 Morgan => Middleware that helps logging
 Helmet => Secures nodeJS
+
+***********************************
+2.8 Router
+Fucccking awesome
+collect couple of routes in one file
+
+***********************************
+2.9~11 MVC
+M Model >> data
+V View >> how does data look
+C Controller >> fnc that looks for data
+Not software, framework / Just a pattern
