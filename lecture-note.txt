@@ -32,8 +32,10 @@ Conclusion>> Executing couple of functions beforeeee handling route
 
 ***********************************
 2.7 Middleware part Two
-Morgan => Middleware that helps logging
+Morgan => Middleware that helps log everything
 Helmet => Secures nodeJS
+body-parser => 프로필이나 댓글을 '업로드'할 때 'form'에 담아서 
+전달하게 되는데, 그 'form'을 받아오는 역할
 
 ***********************************
 2.8 Router
@@ -46,3 +48,11 @@ M Model >> data
 V View >> how does data look
 C Controller >> fnc that looks for data
 Not software, framework / Just a pattern
+
+***********************************
+2.13~16 Pug
+Take View Part on MVC
+Template language, view engine for express
+sends html file instead of res.send()
+The default path of html file is "/views", so make "/views" folder
+Need change of path? app.set("views", "/path/path1/path2~~")

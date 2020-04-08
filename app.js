@@ -10,6 +10,8 @@ import routes from "./routes";
 
 const app = express();
 
+app.set("view engine", "pug"); //set the view engine (default: undefined) to pug
+//app.set("views", "news") // change the path
 app.use(cookieParser()); // understand cookie from user to use session
 app.use(bodyParser.json()); //access to request obj that has form data
 app.use(bodyParser.urlencoded({ extended: true }));
