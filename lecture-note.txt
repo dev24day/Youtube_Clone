@@ -29,3 +29,8 @@ Middleware func has 'next' argument
 Ex in use>> Confirmation of user id, IP address
 
 Conclusion>> Executing couple of functions beforeeee handling route
+
+***********************************
+2.7 Middleware part Two
+Morgan => Middleware that helps logging
+Helmet => Secures nodeJS
