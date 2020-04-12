@@ -6,6 +6,7 @@ export const user_detail = (req, res) => res.send("user_detail");
 export const edit_profile = (req, res) => res.send("edit_profile");
 export const change_password = (req, res) => res.send("change_password");
 */
+export const home = (req, res) => res.render("home");
 export const join = (req, res) => res.render("join");
 //find template file name 'home.pug' from folder '/views' since I set view engine 'pug'
 export const login = (req, res) => res.render("login");
