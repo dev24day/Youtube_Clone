@@ -8,15 +8,15 @@ const SEARCH = "/search";
 //Users
 const USERS = "/users";
 const USER_DETAIL = "/:id"; // "id" => text ":id" => variable
-const EDIT_PROFILE = "/edit_profile";
-const CHANGE_PASSWORD = "/change_password";
+const EDIT_PROFILE = "/:id/edit_profile";
+const CHANGE_PASSWORD = "/:id/change_password";
 
 //Videos
 const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
-const EDIT_VIDEO = "/edit_video";
-const DELETE_VIDEO = "/delete_video";
+const EDIT_VIDEO = "/:id/edit_video";
+const DELETE_VIDEO = "/:id/delete_video";
 
 //Obj
 const routes = {
