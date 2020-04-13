@@ -7,9 +7,10 @@ Youuuuuuutube
 - [ ] Home
 - [x] Join
 - [x] Login
+- [x] Search
 - [ ] User_detail
-- [ ] Edit_profile
-- [ ] Change_password
-- [ ] Upload
+- [x] Edit_profile
+- [x] Change_password
+- [x] Upload
 - [ ] Video_detail
-- [ ] Edit_video
+- [X] Edit_video
