@@ -1,0 +1,14 @@
+mixin videoBlock(video = {})
+    .videoBlock
+        h3.videoBlock__title=video.title
+        video.videoBlock__thumbnail(src=video.videoFile, controls=true)
+        h5.videoBlock__views=video.views
+
+//- 일종의 함수
+//- video라는 obj를 받아와서
+//- video.title로 <h3 class=videoBlock__title>video.title</h3> HTML을 만들어줌
+//- 같은 방법으로,
+//- video.videoFile을 받아와서
+//- 이것을 src로 video태그를 만들고~~
+//- ==> 후에 videoBlock(somethingObj)를 쓰면 
+//-     somethingObj의 속성을 받아와서 sexy한 HTML을 만들어준다!
