@@ -56,8 +56,26 @@ const routes = {
       return UPLOAD;
     }
   },
-  video_detail: VIDEO_DETAIL,
-  edit_video: EDIT_VIDEO,
-  delete_video: DELETE_VIDEO
+  video_detail: id => {
+    if (id) {
+      return `/${id}`;
+    } else {
+      return VIDEO_DETAIL;
+    }
+  },
+  edit_video: id => {
+    if (id) {
+      return `/${id}/edit_video`;
+    } else {
+      return EDIT_VIDEO;
+    }
+  },
+  delete_video: id => {
+    if (id) {
+      return `/${id}/delete_video`;
+    } else {
+      return DELETE_VIDEO;
+    }
+  }
 };
 export default routes;

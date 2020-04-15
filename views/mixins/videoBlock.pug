@@ -1,8 +1,9 @@
 mixin videoBlock(video = {})
-    .videoBlock
-        h3.videoBlock__title=video.title
-        video.videoBlock__thumbnail(src=video.videoFile, controls=true)
-        h5.videoBlock__views=video.views
+    a(href=`/videos${routes.video_detail(video.id)}`)
+        .videoBlock
+            h3.videoBlock__title=video.title
+            video.videoBlock__thumbnail(src=video.videoFile, controls=true)
+            h5.videoBlock__views=video.views
 
 //- 일종의 함수
 //- video라는 obj를 받아와서
