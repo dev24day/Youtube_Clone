@@ -2,7 +2,7 @@ extends layouts/main.pug
 
 block content
     .form-container
-        form(action=`/videos${routes.upload}`, method="post")
+        form(action=`/videos${routes.upload(user.id)}`, method="post")
             label(for="title") Video File
             input(type="file", name="file", id="file")
             input(type="text", name="title", placeholder="Title")

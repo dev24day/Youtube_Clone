@@ -13,7 +13,7 @@ const CHANGE_PASSWORD = "/:id/change_password";
 
 //Videos
 const VIDEOS = "/videos";
-const UPLOAD = "/upload";
+const UPLOAD = "/:id/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit_video";
 const DELETE_VIDEO = "/:id/delete_video";
@@ -26,11 +26,36 @@ const routes = {
   logout: LOGOUT,
   search: SEARCH,
   users: USERS,
-  user_detail: USER_DETAIL,
-  edit_profile: EDIT_PROFILE,
-  change_password: CHANGE_PASSWORD,
+  user_detail: id => {
+    if (id) {
+      return `/${id}`;
+    } else {
+      return USER_DETAIL;
+    }
+  },
+
+  edit_profile: id => {
+    if (id) {
+      return `/${id}/edit_video`;
+    } else {
+      return EDIT_PROFILE;
+    }
+  },
+  change_password: id => {
+    if (id) {
+      return `/${id}/change_password`;
+    } else {
+      return CHANGE_PASSWORD;
+    }
+  },
   videos: VIDEOS,
-  upload: UPLOAD,
+  upload: id => {
+    if (id) {
+      return `/${id}/upload`;
+    } else {
+      return UPLOAD;
+    }
+  },
   video_detail: VIDEO_DETAIL,
   edit_video: EDIT_VIDEO,
   delete_video: DELETE_VIDEO
